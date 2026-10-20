@@ -30,3 +30,21 @@ Add `?translator=Muhiuddin Khan` to any endpoint to get only one translation.
 - `text_arabic` is stored unmodified. `text_plain` (no harakat) is used only for search.
 - The Bismillah is removed from the start of ayah 1 of each surah (except Al-Fatiha) so it isn't duplicated; show it separately in your UI.
 - Data source: AlQuran.cloud (Tanzil text). If you republish the text, keep attribution to Tanzil.net and do not alter the Arabic text.
+
+-বাংলা সার্চ (অনুবাদে খুঁজবে):
+ http://localhost:3000/search?q=ধৈর্য&lang=bn
+
+-আরবি সার্চ (হরকত ছাড়া লিখলেও চলবে):
+ http://localhost:3000/search?q=الصبر&lang=ar
+
+-অতিরিক্ত অপশন:
+&limit=50 দিলে বেশি ফলাফল পাবেন (সর্বোচ্চ ১০০, ডিফল্ট ২০)
+&translator=Muhiuddin Khan দিলে শুধু ওই অনুবাদক দেখাবে
+
+-কমপক্ষে ২ অক্ষর লিখতে হবে।
+
+-অন্যান্য এন্ডপয়েন্টের উদাহরণ:
+
+-পুরো সূরা বাকারা: http://localhost:3000/surahs/2
+-আয়াতুল কুরসি: http://localhost:3000/ayahs/2/255
+-৩০ নম্বর পারা: http://localhost:3000/juz/30
