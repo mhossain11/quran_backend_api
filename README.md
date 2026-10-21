@@ -48,3 +48,4 @@ Add `?translator=Muhiuddin Khan` to any endpoint to get only one translation.
 -পুরো সূরা বাকারা: http://localhost:3000/surahs/2
 -আয়াতুল কুরসি: http://localhost:3000/ayahs/2/255
 -৩০ নম্বর পারা: http://localhost:3000/juz/30
+-https://api.alquran.cloud/v1/quran
